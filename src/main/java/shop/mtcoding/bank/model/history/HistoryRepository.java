@@ -1,18 +1,18 @@
-package shop.mtcoding.bank.model.user;
+package shop.mtcoding.bank.model.history;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface UserRepository {
-    public int insert(User user);
+public interface HistoryRepository {
+    public int insert(History history);
 
-    public int updateById(User user);
+    public int updateById(History history);
 
     public int deleteById(int id);
 
-    public List<User> findAll();
+    public List<History> findAll();
 
-    public User findById(int id);
+    public History findById(int id);
 }

@@ -1,18 +1,18 @@
-package shop.mtcoding.bank.model.user;
+package shop.mtcoding.bank.model.account;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface UserRepository {
-    public int insert(User user);
+public interface AccountRepository {
+    public int insert(Account account);
 
-    public int updateById(User user);
+    public int updateById(Account account);
 
     public int deleteById(int id);
 
-    public List<User> findAll();
+    public List<Account> findAll();
 
-    public User findById(int id);
+    public Account findById(int id);
 }
