@@ -1,5 +1,6 @@
 package shop.mtcoding.bank.controller;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class AccountController {
     @GetMapping({ "/", "/account" })
     public String main() {
+        // throw new CustomException("인증되지 않았습니다", HttpStatus.UNAUTHORIZED);
         return "account/main";
     }
 
